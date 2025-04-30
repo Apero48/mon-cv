@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(175, 235, 215);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px #418490;
+
+}
+
+.container .left-side{
+    position: relative;
+    background: #3b3f95;
+    padding: 40px;
+}
+.profilTexte{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #13f326;
+}
+.container .right-side{
+    position: relative;
+    background: #eae4e4;
+    padding: 40px;
+}
+.imgBx{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.imgBx img{
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+.profilTexte h2{
+    color: #edeef1;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-align: center;
+}
+.profilTexte h2 span{
+    font-size: 0.8;
+    font-weight: 300;
+}
+.contactinfo{
+    padding: 30px;
+}
+.Title{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 600;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.contactinfo ul{
+    position: relative; 
+    list-style: none; 
+}
+.contactinfo ul li{
+    position: relative;
+    margin: 5px;
+}
+.contactinfo ul li .icon{
+    color: #88d88e;
+    display: inline-block;
+    width: 15px;
+    font-style: 14px;
+}
+.contactinfo ul li span{
+    color: #edeef1;
+    font-weight: 300;
+}
+.contactinfo.education li{
+    margin-bottom: 15px;
+}
+.contactinfo.education h5{
+    color: #b3c0e4;
+    font-weight: 500;
+}
+.contactinfo.education h4{
+    color: #edeef1;
+    font-weight: 500;
+}
+.contactinfo.education h4:nth-child(2){
+    color: #edeef1;
+    font-weight: 300;
+}
+.contactinfo.language .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #e0e0e0; /* Couleur de fond pour la barre */
+    display: block;
+    margin-top: 5%;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.contactinfo.language .percent .progress {
+    position: absolute;
+    height: 100%;
+    background: #4caf50; /* Couleur de la barre de progression */
+    border-radius: 3px;
+}
+
+.about .description {
+    font-size: 1.2em; /* Taille de police légèrement plus grande */
+    color: #141313; /* Couleur du texte */
+    line-height: 1.6; /* Espacement entre les lignes */
+    text-align: justify; /* Justifie le texte pour un rendu propre */
+    margin-top: 10px; /* Espacement au-dessus du paragraphe */
+
+}
+
+/* Espacement supplémentaire entre les sections */
+.about, .experience, .skills, .interests {
+    margin-bottom: 50px; /* Augmente l'espace entre les sections */
+}
+
+.experience {
+    margin-top: 20px; /* Espacement au-dessus de la section */
+}
+
+.experience .Title2 {
+    font-size: 1.5em; /* Taille du titre */
+    color: #0c0c0d; /* Couleur du titre */
+    margin-bottom: 10px; /* Espacement sous le titre */
+}
+
+.experience-item h5 {
+    font-size: 1em; /* Taille des dates */
+    color: #151515; /* Couleur des dates */
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+/* Couleur pour "Entreprise" et "Poste" */
+.experience-item h8 {
+    font-size: 1.1em; /* Taille des sous-titres */
+    color: #423eb7; /* Couleur verte */
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.skills {
+    margin-top: 20px;
+}
+
+.skills .Title2 {
+    font-size: 1.5em;
+    color: #111212;
+    margin-bottom: 10px;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    margin-bottom: 15px;
+}
+
+.skills .text {
+    font-size: 1.1em;
+    color: #050505;
+    margin-bottom: 5px;
+    display: inline-block;
+    width: 20%;
+}
+
+.skills .percent {
+    position: relative;
+    width: 75%;
+    height: 6px;
+    background: #fefefe;
+    display: inline-block;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.skills .percent .progress {
+    position: absolute;
+    height: 100%;
+    background: #4caf50;
+    border-radius: 3px;
+}
+
+.interests {
+    margin-top: 20px;
+}
+
+.interests .Title2 {
+    font-size: 1.5em;
+    color: #09090a;
+    margin-bottom: 10px;
+}
+
+.interests ul {
+    list-style: none;
+    padding: 0;
+}
+
+.interests li {
+    font-size: 1.1em;
+    color: #0c0c0c;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.interests li i {
+    margin-right: 10px;
+    color: #4caf50;
+    font-size: 1.2em;
+}
+
+/* Styles pour les tablettes (écrans entre 768px et 1024px) */
+@media screen and (max-width: 1024px) {
+    .container {
+        grid-template-columns: 1fr; /* Une seule colonne */
+        padding: 20px; /* Ajoute un peu de padding */
+    }
+
+    .contactinfo, .about, .experience, .skills, .interests {
+        margin-bottom: 30px; /* Réduit l'espacement entre les sections */
+    }
+
+    .skills .text {
+        width: 30%; /* Ajuste la largeur du texte */
+    }
+
+    .skills .percent {
+        width: 65%; /* Ajuste la largeur des barres de progression */
+    }
+}
+
+/* Styles pour les téléphones (écrans de moins de 768px) */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px; /* Réduit le padding global */
+    }
+
+    .container {
+        grid-template-columns: 1fr; /* Une seule colonne */
+        max-width: 100%; /* Utilise toute la largeur de l'écran */
+    }
+
+    .contactinfo, .about, .experience, .skills, .interests {
+        margin-bottom: 20px; /* Réduit encore l'espacement entre les sections */
+    }
+
+    .skills .text {
+        font-size: 0.9em; /* Réduit la taille du texte */
+        width: 40%; /* Ajuste la largeur du texte */
+    }
+
+    .skills .percent {
+        width: 55%; /* Ajuste la largeur des barres de progression */
+    }
+
+    .interests li {
+        font-size: 1em; /* Réduit la taille des centres d'intérêt */
+    }
+
+    .interests li i {
+        font-size: 1em; /* Réduit la taille des icônes */
+    }
+}
